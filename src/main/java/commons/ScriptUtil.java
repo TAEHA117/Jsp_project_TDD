@@ -4,6 +4,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Objects;
 
 public class ScriptUtil {
     // 정적인 형태로 정리할 것 이다.
@@ -12,5 +13,16 @@ public class ScriptUtil {
         PrintWriter out = resp.getWriter();
         out.printf("<script>alert('%s');</script>", e.getMessage());
         e.printStackTrace();
+    }
+
+    public static void go(HttpServletResponse resp, String url, String target) throws IOException {
+        target = Objects.requireNonNullElse(target, "self");
+        resp.setContentType("text/html; charset=UTF-8");
+        PrintWriter out = resp.getWriter();
+        out.printf("<script>%s.location.replace('%s');</script>", target, url);
+    }
+
+    public static void go(HttpServletResponse resp, String url) throws IOException {
+        go(resp,url,null);
     }
 }
