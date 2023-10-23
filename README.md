@@ -54,12 +54,11 @@
 
 ## 완성 화면
 ### 회원가입
-![회원가입페이지]
+![회원가입페이지](https://raw.githubusercontent.com/TAEHA117/Jsp_project_TDD/Description/images/join.PNG)
 
 ### 로그인!
-
+![로그인페이지](https://raw.githubusercontent.com/TAEHA117/Jsp_project_TDD/Description/images/login.PNG)
 
 ### 메인페이지
-![메인페이지](https://raw.githubusercontent.com/TAEHA117/Jsp_project_TDD/Description/images/%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80.PNG)
-
+![메인페이지](https://raw.githubusercontent.com/TAEHA117/Jsp_project_TDD/Description/images/main.PNG)
 
